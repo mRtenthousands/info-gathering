@@ -33,7 +33,7 @@ namespace 信息收集
             Console.WriteLine("Your name is:" + name);
             Console.WriteLine("Your age is:" + age);
             Console.WriteLine("Your hometown is:" + address);
-            Console.WriteLine("Your bobbies is:" + hobbies);
+            Console.WriteLine("Your hobbies is:" + hobbies);
 
             Console.ReadKey(); 
         }
