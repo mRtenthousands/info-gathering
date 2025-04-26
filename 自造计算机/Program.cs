@@ -11,9 +11,23 @@ namespace 信息收集
     {
         static void Main()
         {
-             GetUserInfo();//方法循环1次
 
-             GetUserInfo();//第二次
+            //循环 for
+            
+
+            for(int i = 0; i<=2; i = i + 1)//分为三个部分（初始这;条件表达式;初始值改变)
+            {
+                GetUserInfo();
+
+                
+            }
+
+                
+            
+
+            //GetUserInfo();//方法循环1次
+
+            // GetUserInfo();//第二次
 
 
 
@@ -33,7 +47,7 @@ namespace 信息收集
             //}
 
 
-
+            //调试从断点开始F10(下一步)F11进去详细看
 
 
 
