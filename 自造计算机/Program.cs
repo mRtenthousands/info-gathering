@@ -11,16 +11,45 @@ namespace 信息收集
     {
         static void Main()
         {
+            int age = 0;
+            bool isCheck = true;
+            for ( ;isCheck; )//循环函数
+            {
+                Console.WriteLine("请输入你的年龄");
+                string str = Console.ReadLine();
+
+
+                try
+                {
+                    age = int.Parse(str);
+                    isCheck = false;
+                }
+                catch //当报错的时候被捕捉
+                {
+                    Console.WriteLine("请输入一个正确的年龄");
+                }
+                
+            }
+
+
+
+
+            age = age + 10;
+
+            string name = Console.ReadLine();
+
+            Console.WriteLine("你的名字是：" + name);
+            Console.WriteLine("你十年后的年龄是：" + age.ToString());
 
             //循环 for
             
 
-            for(int i = 0; i<=2; i = i + 1)//分为三个部分（初始这;条件表达式;初始值改变)
-            {
-                GetUserInfo();
+           // for(int i = 0; i<=2; i = i + 1)//分为三个部分（初始值;条件表达式;初始值改变)
+            //{
+                //GetUserInfo();
 
                 
-            }
+            //}
 
                 
             
@@ -90,7 +119,7 @@ namespace 信息收集
         static string ChangeData(string name)//接收的地方
         {
             //表达式用来计算出一个结果然后赋值一个变量
-            bool isCheck = name == "Zihao Wan";//==是等于=是赋值，不等于是!=(一切都要基于英文输入法)
+            bool isCheck = name == "Zihao Wan";//==是等于 =是赋值，不等于是!=(一切都要基于英文输入法)
             if (isCheck)
             {
                 Console.WriteLine("Your entering is Zihao Wan");
