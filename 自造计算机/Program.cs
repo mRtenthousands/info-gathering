@@ -11,48 +11,102 @@ namespace 信息收集
     {
         static void Main()
         {
-            int age = 0;
-            bool isCheck = true;
-            for ( ;isCheck; )//循环函数
-            {
-                Console.WriteLine("请输入你的年龄");
-                string str = Console.ReadLine();
+            Console.WriteLine("月黑风高杀人夜");
+            Console.WriteLine("请按任意键继续...");
+            Console.ReadKey();
+
+            Console.WriteLine("微风吹动着路边的小草");
+            Console.WriteLine("请按任意键继续...");
+            Console.ReadKey();
+
+            Console.WriteLine("在路边的尽头隐约有个人影");
+            Console.WriteLine("请按任意键继续...");
+            Console.ReadKey();
+
+            Console.WriteLine("走近一看，这人叫");
+            Console.WriteLine("请按任意键继续...");
+            Console.ReadKey();
+
+            Console.WriteLine("请输入大侠的名称");
+            Character nc = new Character();//创建一个类型
+            nc.name1 = Console.ReadLine();
+            
+            
+            Console.ReadKey();
+            Console.WriteLine("哇， 真的是你啊（蔡徐坤音）：" + nc.name1);
+            Console.ReadKey();
+
+            //实例 实例化
+            nc.gender = "男";//前面加nc将这些属性归类给nc这个大侠
+            nc.age = 17;
+            nc.damage = 100;
+            nc.hp = 120;
+            nc.height = 178;
+            nc.skills1 = "鸡你太美";
+            nc.skilllsDamage = 20;
+            nc.skills2 = "你干嘛 哎呀";
+            nc.skillsDamage2 = 5;
+
+            Console.WriteLine("性别:" + nc.gender);
+            Console.WriteLine("年龄:" + nc.age);
+            Console.WriteLine("基础伤害:" + nc.damage);
+            Console.WriteLine("基础血量:" + nc.hp);
+            Console.WriteLine("身高:" + nc.height);
+            Console.WriteLine("初始技能一:" + nc.skills1);
+            Console.WriteLine("初始技能二:" + nc.skills2);
+            Console.ReadLine();
 
 
-                try
-                {
-                    age = int.Parse(str);
-                    isCheck = false;
-                }
-                catch //当报错的时候被捕捉
-                {
-                    Console.WriteLine("请输入一个正确的年龄");
-                }
-                
-            }
+            Console.WriteLine("此时远处传来一声怪响");
+            Console.WriteLine("请按任意键继续...");
+            Console.ReadKey();
+
+            Console.WriteLine("走近一看原来是：");
+            Console.WriteLine("请按任意键继续...");
+            Console.ReadKey();
+
+            Character xb = new Character();
+            xb.name1 = "雪豹";//归类这些没关系的变量，统一到一个角色下面去访问
+            Console.WriteLine("原来你在这里啊！" +  xb.name1);
+            Console.WriteLine("请按任意键继续...");
+            Console.ReadKey();
+
+
+            
+            xb.damage = 30;
+            xb.hp = 70;         
+            xb.skills1 = "雪豹闭嘴！";
+            xb.skilllsDamage = 7;
+
+           
+            
+            Console.WriteLine("基础伤害:" + xb.damage);
+            Console.WriteLine("基础血量:" + xb.hp);
+            Console.WriteLine("初始技能一:" + xb.skills1);
+            Console.WriteLine("初始技能一伤害:" + xb.skilllsDamage);
 
 
 
 
-            age = age + 10;
 
-            string name = Console.ReadLine();
 
-            Console.WriteLine("你的名字是：" + name);
-            Console.WriteLine("你十年后的年龄是：" + age.ToString());
+
+
+            Console.ReadKey();
+
 
             //循环 for
-            
 
-           // for(int i = 0; i<=2; i = i + 1)//分为三个部分（初始值;条件表达式;初始值改变)
+
+            // for(int i = 0; i<=2; i = i + 1)//分为三个部分（初始值;条件表达式;初始值改变)
             //{
-                //GetUserInfo();
+            //GetUserInfo();
 
-                
+
             //}
 
-                
-            
+
+
 
             //GetUserInfo();//方法循环1次
 
@@ -150,4 +204,19 @@ namespace 信息收集
 
     }
 
+
+    class Character//创建一个类用来储存各个角色的属性
+    {
+       public string name1;
+       public string gender;
+       public int age;
+       public int damage;
+       public int hp;
+       public int height;
+       public string skills1;
+       public int skilllsDamage;
+       public string skills2;
+       public int skillsDamage2;
+
+    }
 }
